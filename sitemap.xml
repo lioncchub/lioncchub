@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- 首頁 -->
   <url>
-    <loc>https://lioncchub.github.io/lioncchub/</loc>
+    <loc>https://lioncchub.github.io/lioncchub/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- 產品特色 -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/features.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 購前須知 -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/notice.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 訂購方式 -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/order.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- 價格與聯絡方式 -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/price.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Google 驗證檔 -->
   <url>
     <loc>https://lioncchub.github.io/lioncchub/googleafc4f9256ceec825.html</loc>
     <changefreq>yearly</changefreq>

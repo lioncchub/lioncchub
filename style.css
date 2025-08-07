@@ -1,0 +1,64 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+header { background: #fff; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px; }
+nav a { text-decoration: none; color: #333; font-weight: bold; }
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;    /* 增加內距讓範圍變大 */
+  display: inline-block; /* 讓 padding 能影響整個區塊 */
+  border-radius: 4px;    /* 讓按鈕有圓角 */
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+main { padding: 20px; max-width: 1200px; margin: auto; background: #fff; }
+footer { text-align: center; padding: 20px; background: #eee; font-size: 14px; }
+
+
+/* 響應式：手機版調整 (寬度 <= 768px 時套用) */
+@media screen and (max-width: 768px) {
+
+  /* Header區塊 (上下堆疊置中) */
+  header {
+    text-align: center;
+  }
+
+  /* 導覽列 (改為上下排列) */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* 主內容 main (左右撐滿、上下留白) */
+  main {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  /* 產品特色圖片區塊 (自動換行堆疊) */
+  .features-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 產品特色圖片 (手機版鋪滿寬度) */
+  .features-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* CTA 按鈕 (保持原尺寸置中) */
+  .cta {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+  }
+}
+
