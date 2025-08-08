@@ -79,17 +79,10 @@
   }
 </style>
 
-<header style="display: flex; align-items: center; justify-content: center; padding: 10px 0; position: relative; min-height: 120px;">
-  <!-- Logo 左側 -->
-  <img src="logo.jpg" alt="Logo" style="height: 100px; position: absolute; left: 40px;">
-
-  <!-- 中間文字 -->
-  <h1 style="margin: 0; font-size: 28px; text-align: center;">
-    Enjoythewilds 護趾涉水夾趾拖鞋
-  </h1>
-
-  <!-- QR Code 右側 -->
-  <img src="qr-code.png" alt="QR Code" style="height: 100px; position: absolute; right: 40px;">
+<header>
+  <img src="logo.jpg" alt="Logo" class="header-logo">
+  <h1>Enjoythewilds 護趾涉水夾趾拖鞋</h1>
+  <img src="qr-code.png" alt="QR Code" class="header-qr">
 </header>
 
 <nav class="main-nav">
@@ -140,27 +133,49 @@ header > nav {
   header h1 { font-size: 36px; }
 }
 
-/* 手機版調整 Header 排版 */
+<!-- 手機版 header 排版調整 -->
+<style>
 @media (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column; /* 改成上下排列 */
-    align-items: center;    /* 水平置中 */
-    padding: 20px 0;        /* 上下留空間 */
-    gap: 10px;              /* 元素之間留距離 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;    /* 左右置中 */
+    text-align: center;
+    gap: 10px;               /* 元素間距 */
+    min-height: auto;        /* 移除原本固定高度 */
+    position: static;        /* 取消 relative 定位 */
+    padding: 20px 0;
   }
 
   header img {
-    height: 80px; /* 縮小圖片高度，避免佔滿螢幕 */
+    position: static !important; /* 取消絕對定位 */
+    height: 80px;                 /* 縮小圖片高度 */
   }
 
   header h1 {
+    order: 2;
     font-size: 20px;
-    text-align: center;
-    margin: 0;
+    white-space: normal;
   }
+
+  /* 順序控制 */
+  header img:first-of-type { order: 1; } /* Logo */
+  header img:last-of-type { order: 3; }  /* QR Code */
 }
 </style>
+
+<header style="display: flex; align-items: center; justify-content: center; padding: 10px 0; position: relative; min-height: 120px;">
+  <!-- Logo 左側 -->
+  <img src="logo.jpg" alt="Logo" style="height: 100px; position: absolute; left: 40px;">
+
+  <!-- 中間文字 -->
+  <h1 style="margin: 0; font-size: 28px; text-align: center;">
+    Enjoythewilds 護趾涉水夾趾拖鞋
+  </h1>
+
+  <!-- QR Code 右側 -->
+  <img src="qr-code.png" alt="QR Code" style="height: 100px; position: absolute; right: 40px;">
+</header>
 
 
 
