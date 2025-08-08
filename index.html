@@ -22,28 +22,126 @@
 </head>
 <body>
 
-<header style="position: relative; text-align: center; padding: 10px 0;">
-  <!-- Logo 左側 -->
-  <img src="logo.jpg" alt="Logo" style="height: 120px; position: absolute; left: 40px; top: 50%; transform: translateY(-50%);">
 
-  <!-- 中間文字 -->
-  <h1 style="margin: 10; font-size: 32px;">
-    Enjoythewilds 護趾涉水夾趾拖鞋
-  </h1>
 
-  <!-- QR Code 右側 -->
-  <img src="qr-code.png" alt="QR Code" style="height: 120px; position: absolute; right: 60px; top: 50%; transform: translateY(-50%);">
+<!-- 這段 <style> 可以先暫時放在這裡；正式建議放到 <head> -->
+<style>
+  .site-header {
+    /* 調整左右往內縮的量：數字越大，Logo/QR 越靠中間 */
+    --padX: 40px;
+    /* 調圖片大小（左右兩側） */
+    --imgH: 120px;
 
-  <!-- 導覽列緊貼標題 -->
-  <nav style="margin-top: 80px; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <ul style="list-style: none; padding: 10px; margin: 0; display: flex; gap: 20px; justify-content: center;">
-      <li><a href="features.html">產品特色</a></li>
-      <li><a href="notice.html">購前須知</a></li>
-      <li><a href="order.html">訂購方式</a></li>
-      <li><a href="price.html">售價.服務電話</a></li>
-    </ul>
-  </nav>
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px var(--padX);
+    gap: 16px;
+    text-align: center;
+  }
+  .site-header .side {
+    height: var(--imgH);
+    width: auto;
+    display: block;
+  }
+  .site-header h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* 導覽列跟在 header 後面 */
+  .main-nav {
+    margin-top: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .main-nav ul {
+    list-style: none; margin: 0; padding: 10px;
+    display: flex; gap: 20px; justify-content: center;
+  }
+
+  /* 手機調整 */
+  @media (max-width: 768px) {
+    .site-header { --padX: 16px; --imgH: 80px; }
+    .site-header h1 { font-size: 24px; }
+  }
+  /* 更小的螢幕時改成上下堆疊（不擠） */
+  @media (max-width: 520px) {
+    .site-header {
+      grid-template-columns: 1fr;
+      row-gap: 8px;
+    }
+    .site-header h1 { order: 2; font-size: 22px; }
+    .site-header img { justify-self: center; }
+  }
+</style>
+
+<header class="site-header">
+  <img src="logo.jpg" alt="Logo" class="side">
+  <h1>Enjoythewilds 護趾涉水夾趾拖鞋</h1>
+  <img src="qr-code.png" alt="QR Code" class="side">
 </header>
+
+<nav class="main-nav">
+  <ul>
+    <li><a href="features.html">產品特色</a></li>
+    <li><a href="notice.html">購前須知</a></li>
+    <li><a href="order.html">訂購方式</a></li>
+    <li><a href="price.html">售價.服務電話</a></li>
+  </ul>
+</nav>
+
+
+
+<style>
+/* 桌機：左右等寬，中間標題置中 */
+header {
+  --side: 140px;
+  display: grid;
+  grid-template-columns: var(--side) 1fr var(--side);
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 12px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+header img { height: 100px; }
+header > img:first-of-type { justify-self: start; }
+header > img:last-of-type  { justify-self: end; }
+
+/* 讓導覽列跨滿整列（重點！） */
+header > nav {
+  grid-column: 1 / -1;   /* ← 加這行 */
+  width: 100%;           /* ← 這行也建議加 */
+}
+
+/* 平板：微縮 */
+@media (max-width: 1200px) {
+  header { --side: 120px; }
+  header img { height: 90px; }
+  header h1 { font-size: 36px; }
+}
+
+/* 手機直向堆疊 */
+@media (max-width: 768px) {
+  header { grid-template-columns: 1fr; }
+  header img { height: 80px; justify-self: center; }
+  header h1 { white-space: normal; font-size: 28px; }
+  header > nav { grid-column: 1 / -1; width: 100%; }
+}
+</style>
+
 
 
 <main>
