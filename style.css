@@ -62,3 +62,21 @@ footer { text-align: center; padding: 20px; background: #eee; font-size: 14px; }
   }
 }
 
+
+
+/* 手機版導覽列避免被 Logo / QR Code 遮擋 */
+@media (max-width: 768px) {
+  header {
+    padding-top: 140px; /* 預留空間，避開絕對定位的 Logo 與 QR Code */
+    position: relative;
+  }
+
+  nav {
+    margin-top: 10px; /* 導覽列與上方內容留間距 */
+  }
+
+  /* 如果手機版要縮小 Logo / QR Code 尺寸 */
+  header img {
+    height: 80px; /* 原本 120px 可改小以節省空間 */
+  }
+}
