@@ -140,28 +140,27 @@ header > nav {
   header h1 { font-size: 36px; }
 }
 
-/* 手機直向堆疊 */
+/* 手機版調整 Header 排版 */
 @media (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column; /* 垂直排列 */
+    flex-direction: column; /* 改成上下排列 */
     align-items: center;    /* 水平置中 */
-    text-align: center;
+    padding: 20px 0;        /* 上下留空間 */
+    gap: 10px;              /* 元素之間留距離 */
   }
 
   header img {
-    position: static;       /* 取消絕對定位或 grid 對齊 */
-    height: auto;
-    max-width: 120px;        /* 控制圖片大小 */
-    margin: 8px 0;           /* 每項之間留間距 */
+    height: 80px; /* 縮小圖片高度，避免佔滿螢幕 */
   }
 
   header h1 {
-    margin: 8px 0;
-    font-size: 20px;         /* 手機版適合字體大小 */
-    white-space: normal;     /* 允許換行 */
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
   }
-}</style>
+}
+</style>
 
 
 
