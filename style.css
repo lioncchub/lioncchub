@@ -62,22 +62,3 @@ footer { text-align: center; padding: 20px; background: #eee; font-size: 14px; }
   }
 }
 
-
-
-/* 手機版導覽列避免被 Logo / QR Code 遮擋 */
-@media (max-width: 768px) {
-  header {
-    padding-top: 180px; /* 預留更多空間 */
-    position: relative;
-  }
-
-  /* Logo 與 QR Code 縮小 */
-  header img {
-    height: 70px; /* 從 120px 縮到 70px，避免佔太多垂直空間 */
-  }
-
-  /* 導覽列間距 */
-  nav {
-    margin-top: 10px;
-  }
-}
