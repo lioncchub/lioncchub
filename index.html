@@ -85,7 +85,7 @@
     display: flex;
     justify-content: space-between; /* 左右分開 */
     align-items: center;
-    padding: 0 40px; /* 左右留白，數字越小越靠中 */
+    padding: 0 100px; /* 左右留白，數字越小越靠中 */
   }
 
   /* 如果要再往中間靠攏，就減少左右 padding 值 */
@@ -153,37 +153,30 @@ header > nav {
   header h1 { font-size: 36px; }
 }
 
-<!-- 手機版 header 排版調整 -->
-<style>
+
+/* 手機版 Logo、QR Code、標題排版修正 */
 @media (max-width: 768px) {
   header {
     display: flex;
-    flex-direction: column; /* 垂直排列 */
-    align-items: center;    /* 左右置中 */
-    text-align: center;
-    gap: 10px;               /* 元素間距 */
-    min-height: auto;        /* 移除原本固定高度 */
-    position: static;        /* 取消 relative 定位 */
-    padding: 20px 0;
+    flex-direction: column; /* 改成垂直排列 */
+    align-items: center;
+    gap: 10px; /* 元素間距 */
+    padding: 10px 0;
   }
 
   header img {
+    height: 80px; /* 手機版縮小圖片 */
     position: static !important; /* 取消絕對定位 */
-    height: 80px;                 /* 縮小圖片高度 */
   }
 
   header h1 {
-    order: 2;
     font-size: 20px;
-    white-space: normal;
+    text-align: center;
+    white-space: normal; /* 允許自動換行 */
+    word-break: break-word; /* 長單字也可斷行 */
+    margin: 0;
   }
-
-  /* 順序控制 */
-  header img:first-of-type { order: 1; } /* Logo */
-  header img:last-of-type { order: 3; }  /* QR Code */
 }
-</style>
-
 
 
 
