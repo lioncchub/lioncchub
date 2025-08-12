@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- 產品特色頁 -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/features.html</loc>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E5%A4%BE%E8%B6%BE%E6%A2%9D.png</image:loc>
+      <image:title>專利一體成型夾趾條</image:title>
+      <image:caption>全包覆夾趾條設計，提升貼合與防護（紅色夾趾條為示意）。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E5%89%8D%E9%96%8B%E5%8F%A3.png</image:loc>
+      <image:title>前開口設計</image:title>
+      <image:caption>前開口便於異物排出，涉水更安心。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E9%A2%A8%E4%B9%BE.png</image:loc>
+      <image:title>快乾可立即穿</image:title>
+      <image:caption>風乾約 10 分鐘即可上腳，適合涉水後快速恢復。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E5%BA%95%E6%BA%9D3.png</image:loc>
+      <image:title>鞋底深溝設計</image:title>
+      <image:caption>深溝與紋路加強抓地力並延長鞋底壽命。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E8%AA%BF%E9%AC%86%E7%B7%8A3.png</image:loc>
+      <image:title>鬆緊可調</image:title>
+      <image:caption>可依需求做擴鬆或收緊調整（與服務人員討論細節）。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E7%B2%97%E7%B3%99%E8%B8%8F%E6%84%9F.png</image:loc>
+      <image:title>粗糙踏感</image:title>
+      <image:caption>類按摩顆粒鞋床，提升止滑與腳感。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E8%BC%95%E9%87%8F.png</image:loc>
+      <image:title>輕量設計</image:title>
+      <image:caption>長時間行走也無負擔的輕量化鞋體。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E9%81%8E%E7%A9%8D%E6%B0%B42.png</image:loc>
+      <image:title>一體成形夾趾條</image:title>
+      <image:caption>涉水時輕踩積水不內滲，維持腳部乾爽。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E8%AD%B7%E8%B6%BE.png</image:loc>
+      <image:title>全方位護趾</image:title>
+      <image:caption>有效防止踢到石頭等造成的腳趾撞傷。</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 購前須知頁（尺寸量測示意圖） -->
+  <url>
+    <loc>https://lioncchub.github.io/lioncchub/notice.html</loc>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E8%85%B3%E9%87%8F%E5%B0%BA%E5%AF%B8.jpg</image:loc>
+      <image:title>腳長與腳背高度量測</image:title>
+      <image:caption>依腳背最高點與全腳長度測量，提供調整參考。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E7%B7%9A%E5%8E%9A%E5%BA%A6.png</image:loc>
+      <image:title>腳背厚度量測示意</image:title>
+      <image:caption>以測量工具貼合腳背，量取垂直高度。</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://lioncchub.github.io/lioncchub/%E7%B7%9A%E9%95%B7%E5%BA%A6.png</image:loc>
+      <image:title>腳長量測示意</image:title>
+      <image:caption>腳跟貼牆，量取最長腳趾到牆面的距離。</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
